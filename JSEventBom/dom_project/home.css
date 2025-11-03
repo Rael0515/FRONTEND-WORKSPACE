@@ -1,0 +1,96 @@
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h2 {
+  font-size: 60px;
+}
+nav {
+  border: solid;
+  border-radius: 30px;
+  background-color: bisque;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+nav div {
+  width: 20%;
+}
+nav div a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  letter-spacing: 10px;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+}
+section {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+}
+section iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+section home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hint {
+  /*border: 1px solid #ddd;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.p1table {
+  display: flex;
+  justify-content: center;
+}
+.docw {
+  width: auto;
+  margin: 0 auto;
+}
+.docw th,
+.docw td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+.docw thead {
+  background: beige;
+}
