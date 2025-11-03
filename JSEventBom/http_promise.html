@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajax</title>
+    <script>
+      function sendRequest() {
+        return new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open(
+            "GET",
+            "http://210.93.60.16:8080/frontend/RestController?cmd=list"
+          );
+          xhr.send();
+          xhr.onload = function () {
+            if (xhr.status === 200) {
+              alert("success-성공");
+              resolve(xhr.response);
+            } else {
+              alert("failure-실패");
+              reject(xhr.statusText);
+            }
+          };
+        });
+      }
+      function doRequest() {
+        sendRequest()
+          .then((data) => {
+            console.log("성공:", data);
+            alert(data);
+          })
+          .catch((error) => {
+            console.error("실패:", error);
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <button id="request" onClick="doRequest()">request-promise</button>
+    <div id="target"></div>
+  </body>
+</html>

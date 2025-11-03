@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>String 객체</h3>
+    <script>
+      let str = new String("JavaScript And React");
+      document.write("String: " + str + "<br>");
+      document.write(str.charAt(0) + "<br>");
+      document.write(str.concat("Programming") + "<br>");
+      document.write(str.indexOf("React") + "<br>");
+      document.write(str.slice(4, 10) + "<br>");
+      document.write(str.substr(4, 6) + "<br>");
+      document.write(str.toLowerCase() + "<br>");
+      document.write("TUKOREA".trim() + "<br><hr>");
+
+      let strArray = str.split(" ");
+      document.write("str을 공백을 구분 문자(delimeter)로 분리<br>");
+      for (let i = 0; i < strArray.length; i++)
+        document.write("item" + i + "=" + strArray[i] + "<br>");
+      document.write("str: " + str + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajax</title>
+    <script>
+      async function sendRequest() {
+        try {
+          const response = await fetch(
+            "http://210.93.60.16:8080/frontend/RestController?cmd=list"
+          );
+          const data = await response.json();
+          alert("success-성공");
+          console.log(data);
+        } catch (err) {
+          alert("failure-실패");
+          console.log(err);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button id="request" onClick="doRequest()">request-async-await</button>
+    <div id="target"></div>
+  </body>
+</html>

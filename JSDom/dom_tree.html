@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML DOM트리</title>
+  </head>
+  <body>
+    <h3>DOM객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+    <hr />
+    <p id="target" style="color: blue" onclick="this.style.color='red'">
+      안녕하세요 나의 홈페이지 입니다.
+    </p>
+    <script>
+      let p = document.getElementById("target");
+      let text = "p.id = " + p.id + "\n";
+      text += "p.tagName = " + p.tagName + "\n";
+      text += "p.innerHTML = " + p.innerHTML + "\n";
+      text += "p.style.color = " + p.style.color + "\n";
+      text += "p.onclick = " + p.onclick + "\n";
+      text += "p.childElementCount = " + p.childElementCount + "\n";
+      text += "너비 = " + p.offsetWidth + "\n";
+      text += "높이 = " + p.offsetHeight + "\n";
+      alert(text);
+    </script>
+  </body>
+</html>
