@@ -66,8 +66,8 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.hint {
-  /*border: 1px solid #ddd;*/
+.hint,
+#hint {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,20 +77,25 @@ footer {
   margin-bottom: 20px;
   line-height: 1.6;
 }
-.p1table {
-  display: flex;
-  justify-content: center;
+button.hint {
+  display: block;
+  padding: 5px 15px;
+  margin: 25px auto 30px auto;
 }
-.docw {
+table {
   width: auto;
   margin: 0 auto;
+  border-collapse: collapse;
 }
-.docw th,
-.docw td {
+table th,
+table td {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
 }
-.docw thead {
+table thead {
   background: beige;
+}
+table tbody {
+  background: rgb(255, 255, 250);
 }

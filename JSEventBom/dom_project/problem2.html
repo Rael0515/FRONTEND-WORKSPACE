@@ -1,2 +1,116 @@
 <!DOCTYPE html>
-<html></html>
+<html>
+  <head>
+    <title>problem2</title>
+    <link type="text/css" rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <h4 class="hint">
+      book 객체 배열을 for 반복문을 사용하여 동적 테이블을 작성합니다. 문제 1과
+      다른 점은 <br />
+      tbody 요소를 생성할 때 for 반복문을 사용하여 각 row 들을
+      tbody(id="table_data")의 innerHTML에 추가 저장합니다.
+    </h4>
+    <table>
+      <thead>
+        <tr>
+          <th>ISBN</th>
+          <th>책 제목</th>
+          <th>지은이</th>
+          <th>출판사</th>
+          <th>발행 날짜</th>
+          <th>총 페이지</th>
+        </tr>
+      </thead>
+      <tbody id="table_data"></tbody>
+    </table>
+    <script>
+      const bookList = [
+        {
+          isbn: "101",
+          title: "HTML5",
+          name: "버너스 리",
+          publisher: "한빛 미디어",
+          pub_date: "2018/08/31",
+          num_page: 544,
+        },
+        {
+          isbn: "102",
+          title: "자바 스크립트",
+          name: "브랜든 아이크",
+          publisher: "생능",
+          pub_date: "2021/09/26",
+          num_page: 625,
+        },
+        {
+          isbn: "103",
+          title: "리액트 프로그래밍",
+          name: "조던 워커",
+          publisher: "인피니티",
+          pub_date: "2023/02/17",
+          num_page: 234,
+        },
+        {
+          isbn: "104",
+          title: "스프링 프레임워크",
+          name: "로드 존슨",
+          publisher: "동아 출판사",
+          pub_date: "2022/04/08",
+          num_page: 355,
+        },
+        {
+          isbn: "105",
+          title: "플라스크",
+          name: "홀로바티",
+          publisher: "홍릉",
+          pub_date: "2024/10/19",
+          num_page: 782,
+        },
+        {
+          isbn: "106",
+          title: "솔리디티",
+          name: "가빈 우드",
+          publisher: "인사이트",
+          pub_date: "2023/05/01",
+          num_page: 134,
+        },
+        {
+          isbn: "107",
+          title: "비트코인",
+          name: "사토시",
+          publisher: "에이콘 출판사",
+          pub_date: "2021/01/31",
+          num_page: 255,
+        },
+      ];
+      table_rendering(bookList);
+      function table_rendering(bookData) {
+        let table = document.getElementById("table_data");
+        for (let i = 0; i < bookList.length; i++) {
+          const b = bookData[i];
+          table.innerHTML +=
+            "<tr>" +
+            "<td>" +
+            b.isbn +
+            "</td>" +
+            "<td>" +
+            b.title +
+            "</td>" +
+            "<td>" +
+            b.name +
+            "</td>" +
+            "<td>" +
+            b.publisher +
+            "</td>" +
+            "<td>" +
+            b.pub_date +
+            "</td>" +
+            "<td>" +
+            b.num_page +
+            "</td>" +
+            "</tr>";
+        }
+      }
+    </script>
+  </body>
+</html>
