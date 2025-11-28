@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#cat").show().fadeOut("slow").slideDown("slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>메소드 체이닝 시작</button>
+    <img
+      id="cat"
+      src="images/cat.png"
+      alt=""
+      width="120"
+      height="100"
+      style="display: none"
+    />
+  </body>
+</html>

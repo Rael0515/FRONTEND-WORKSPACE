@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery3.7.1.js"></script>
+  </head>
+  <body>
+    <p id="name">안녕하세요</p>
+    <script>
+      $("#name").click(function () {
+        this.innerHTML = "<em>변경합니다. </em>";
+        alert(this.innerHTML);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <button id="request">request-Ajax-jQuery</button>
+    <div id="target"></div>
+    <script>
+      $("#request").click(function () {
+        $.ajax({
+          url: "http://210.93.60.16:8080/frontend/RestController?cmd=list",
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+            alert("success-성공");
+            console.log(data);
+          },
+          complete: function () {
+            alert("complete");
+            console.log("complete");
+          },
+          error: function (request, status, error) {
+            alert("error-실패");
+            console.log(error);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

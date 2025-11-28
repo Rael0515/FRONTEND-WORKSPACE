@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <button>Show it</button>
+    <img
+      id="cat"
+      src="images/cat.png"
+      alt=""
+      width="180"
+      height="150"
+      style="display: none"
+    />
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#cat").show("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.app {
+  margin: 5 auto;
+  text-align: center;
+}
+
+.app > table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  background-color: #e0f5cc;
+}
+.app th,
+td {
+  padding: 3px;
+  border: 1px solid black;
+  text-align: center;
+}

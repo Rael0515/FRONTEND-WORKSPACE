@@ -1,0 +1,47 @@
+[
+  {
+    "id": "hansol",
+    "passwd": "hansol",
+    "username": "정한솔",
+    "snum": "2012152040",
+    "depart": "컴퓨터(주)",
+    "mobile": "010-1111-9999",
+    "email": "hansol@tukorea.ac.kr"
+  },
+  {
+    "id": "hodong",
+    "passwd": "password",
+    "username": "강호동",
+    "snum": "20189999",
+    "depart": "소프트웨어공학",
+    "mobile": "010-5555-0000",
+    "email": "hodong@tukorea.ac.kr"
+  },
+  {
+    "id": "kildong",
+    "passwd": "password",
+    "username": "홍길동",
+    "snum": "20219999",
+    "depart": "소프트공학",
+    "mobile": "010-3333-4444",
+    "email": "kildong@tukorea.ac.kr"
+  },
+  {
+    "id": "minho",
+    "passwd": "password",
+    "username": "최민호",
+    "snum": "20221234",
+    "depart": "컴퓨터공학",
+    "mobile": "010-2222-3334",
+    "email": "minho@tukorea.ac.kr"
+  },
+  {
+    "id": "tuk",
+    "passwd": "1234",
+    "username": "한공대",
+    "snum": "20231234",
+    "depart": "컴퓨터",
+    "mobile": "010-4545-7878",
+    "email": "tuk@tukorea.ac.kr"
+  }
+]
