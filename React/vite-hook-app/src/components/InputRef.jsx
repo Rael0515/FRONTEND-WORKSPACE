@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+
 const InputRef = () => {
   const [text, setText] = useState("");
   const textRef = useRef(); // useRef로 생성한 객체 textRef에 저장
